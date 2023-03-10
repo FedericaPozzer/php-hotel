@@ -86,28 +86,29 @@
 
                 </tr>
             </thead>
+
             <tbody>
 
-                <?php foreach($hotels as $hotel) { ?>
-                
                 <?php foreach($hotel as $key => $ciao) { ?>
 
-
                 <tr>
-
+                
                     <th>
                         <?php echo $key ?>
                     </th>
 
+                
+                    
+                    <?php foreach($hotels as $hotel) { ?>
+
                     <td>
-
                         <?php echo $ciao?>
-
                     </td>
+        
+                    <?php } ?>
                     
                 </tr>
 
-                <?php } ?>
                 <?php } ?>
                 
 
