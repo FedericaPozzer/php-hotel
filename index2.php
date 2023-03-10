@@ -76,53 +76,33 @@
     <div class="container pt-5">
 
         <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">&hearts;</th>
-    
-                    <?php foreach($hotels as $hotel) { ?>
-                    <th class="text-center" scope="col">
-                        <h5> <?php echo $hotel["name"] ?> </h5>
-                    </th>
-                    <?php } ?>
 
-                </tr>
-            </thead>
-
+                        <!-- thead -->
+           
             
             <tbody>
 
+                <?php foreach($hotels as $hotel) { ?>
 
-                <?php foreach($hotel as $key => $info) { ?>
+                    <?php var_dump($hotel); ?>
 
-                <tr>
-                
-                    <?php if ($key != "name") { ?>
+                    <br>
+                    <br>
 
-                    <th scope="row">
-                        <?php echo $key; ?>
-                    </th>
+                    <tr>
+                        
+                        <?php foreach($hotel as $item) { ?>
 
-                    <?php } ?>
+                            <td> <?php echo $item; ?> </td>
 
-                
-                    
-                    <?php foreach($hotels as $pippo) { ?>
-
-                        <?php if ($key != "name") { ?>
-                        <td class="text-center">
-
-                            <?php echo $pippo[$key]; ?>
-
-                        </td>
-
+                        
                         <?php } ?>
-        
-                    <?php } ?>
-                    
-                </tr>
+
+                    </tr>
+
 
                 <?php } ?>
+                
                 
 
             </tbody>
