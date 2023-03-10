@@ -88,6 +88,8 @@
             </thead>
             <tbody>
 
+                <?php foreach($hotels as $hotel) { ?>
+                
                 <?php foreach($hotel as $key => $ciao) { ?>
 
 
@@ -97,18 +99,17 @@
                         <?php echo $key ?>
                     </th>
 
-                    <?php foreach($hotel as $info) { ?>
                     <td>
 
-                        <?php echo $info?>
+                        <?php echo $ciao?>
 
                     </td>
-                    <?php } ?>
                     
                 </tr>
 
                 <?php } ?>
-
+                <?php } ?>
+                
 
             </tbody>
         </table>
