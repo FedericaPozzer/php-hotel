@@ -56,7 +56,17 @@
     <div>
         <?php foreach($hotels as $hotel) { ?>
             
-            <?php var_dump($hotel) ?>
+            <?php /* var_dump($hotel) */ ?>
+
+                <ul>
+                    <?php foreach($hotel as $info) { ?>
+
+                        <li>
+                            <?php echo $info ?>
+                        </li>
+                    
+                    <?php } ?>
+                </ul>
 
         <?php } ?>
 
