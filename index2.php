@@ -57,54 +57,40 @@
 </head>
 <body>
 
-    <!-- OK <div>
-        <?php foreach($hotels as $hotel) { ?>
-            <div class="container">
-                <ul>
-                    <?php foreach($hotel as $info) { ?>
-                        <li>
-                            <?php echo $info ?>
-                        </li>
-                    <?php } ?>
-                </ul>
-            </div>
-        <?php } ?>
-    </div> -->
-
-
 
     <div class="container pt-5">
 
         <table class="table">
 
-                        <!-- thead -->
+             <thead>
+
+                <tr class="table-primary">
+                    <td> <b>Name</b></td>
+                    <td> <b>Description</b></td>
+                    <td> <b>Parking</b></td>
+                    <td> <b>Vote (0-5)</b></td>
+                    <td> <b>Distance to the center (km)</b></td>
+                </tr>
+
+            </thead>
            
             
             <tbody>
 
                 <?php foreach($hotels as $hotel) { ?>
 
-                    <?php var_dump($hotel); ?>
+                    <tr class="table-secondary">
 
-                    <br>
-                    <br>
-
-                    <tr>
-                        
                         <?php foreach($hotel as $item) { ?>
 
-                            <td> <?php echo $item; ?> </td>
-
+                        <td> <?php echo $item; ?> </td>
                         
                         <?php } ?>
 
                     </tr>
 
-
                 <?php } ?>
                 
-                
-
             </tbody>
         </table>
 
